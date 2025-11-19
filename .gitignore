@@ -1,0 +1,10 @@
+.DS_Store
+.venv/
+venv/
+.idea/
+.code/
+.coverage
+htmlcov/
+# Default ignored files
+/shelf/
+/workspace.xml

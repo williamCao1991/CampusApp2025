@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="campusapp.controllers.AddEventController"
+      alignment="CENTER_LEFT" spacing="12">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Label text="Add New Event" style="-fx-font-size: 22px;"/>
+
+    <Label text="Title:"/>
+    <TextField fx:id="titleField" promptText="Event title" maxWidth="300"/>
+
+    <Label text="Date:"/>
+    <DatePicker fx:id="datePicker" maxWidth="300"/>
+
+    <Label text="Description:"/>
+    <TextArea fx:id="descriptionField" promptText="Event description"
+              prefRowCount="4" maxWidth="300"/>
+
+    <Label text="Event Type:"/>
+    <ComboBox fx:id="typeBox" maxWidth="300"/>
+
+    <Label text="Extra Detail (Club name, sport type, or room):"/>
+    <TextField fx:id="extraField" promptText="e.g., Chess Club or Room 204" maxWidth="300"/>
+
+    <Button text="Save Event" onAction="#saveEvent" maxWidth="150"/>
+
+</VBox>
+
+

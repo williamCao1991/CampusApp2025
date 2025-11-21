@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="campusapp.controllers.EventDetailsController"
+      alignment="TOP_LEFT" spacing="12">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Label fx:id="titleLabel" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <Label text="Date:"/>
+    <Label fx:id="dateLabel"/>
+
+    <Label text="Event Type:"/>
+    <Label fx:id="typeLabel"/>
+
+    <Label text="Description:"/>
+    <TextArea fx:id="descriptionLabel"
+              editable="false"
+              wrapText="true"
+              prefRowCount="6"
+              maxWidth="350"/>
+
+    <HBox spacing="15">
+        <Button text="RSVP" onAction="#rsvpPressed"/>
+        <Button text="Close" onAction="#close"/>
+    </HBox>
+
+</VBox>
+
+
